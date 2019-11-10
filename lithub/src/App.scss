@@ -1,0 +1,14 @@
+
+$dark: #24292e;
+
+$family-sans-serif: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+
+
+$input-background-color: #404448;
+$input-color: #ffffff;
+$input-border-color: $dark;
+
+@import '../node_modules/bulma/bulma';
+$body-weight: $weight-semibold;
+
+
