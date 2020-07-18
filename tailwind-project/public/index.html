@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/build/tailwind.css">
 </head>
-<body class="px-6 mx-auto">
+<body class="px-6 mx-auto pb-10">
     <!-- Traditional alert -->
     <h1 class="font-sans text-2xl font-normal text-gray-900 tracking-normal mt-5">Traditional alert</h1>
     <div class="border border-gray-400 mt-3 rounded-lg">
@@ -31,25 +31,53 @@
             <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
         </div>
     </div>    
-
-    <!-- Modern alert with badge -->
-    <h1 class="font-sans text-2xl font-normal text-gray-900 tracking-normal mt-5">Modern alert with badge</h1>
-
-    <!-- background -->
-    <div class="border border-gray-400 bg-indigo-900 mt-3 py-1 rounded-lg font-bold">
-        <div class="my-4 py-3 text-indigo-100 bg-indigo-800 relative leading-none lg:rounded-full lg:w-5/12 mx-auto">
-            <span class="uppercase ml-3 rounded-full text-sm bg-indigo-500 py-1 px-2">New</span>
-            <span class="text-lg ml-3 font-semibold text-left">Get the coolest t-shirts from our brand new store</span>
-            <span class="absolute top-0 right-0 bottom-0 py-3 px-3">
-                <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-            </span>
+    
+    <!-- Simple button -->
+    <h1 class="font-sans text-2xl font-normal text-gray-900 tracking-normal mt-5">Simple button</h1>
+    
+    <button class="font-bold text-gray-100 text-lg rounded-md px-4 py-2 bg-blue-500 hover:bg-blue-700">
+        Get Started
+    </button>
+    
+    <!-- Simple form -->
+    <h1 class="font-sans text-2xl font-normal text-gray-900 tracking-normal mt-5">Simple form</h1>
+    
+    <!-- div represents the  whole form including the copyright -->
+    <div class="border rounded-lg bg-blue-100 p-8">
+        <!-- form represents the white part -->
+        <!-- tip: mx-auto to auto-center an element -->
+        <div class="w-full max-w-xs mx-auto">
+            <form class="px-8 pt-6 pb-8 bg-white rounded shadow-md mb-4">
+                <div>
+                    <label for="username" class="text-gray-700 font-bold">Username</label>
+                    <input class="leading-none block mt-3 rounded-lg shadow-sm focus:shadow-outline px-3 py-2 text-lg font-medium border-gray-400 border" type="text" id="username" name="Username" autocomplete="on" placeholder="Username">
+                </div>
+                <div class="mt-6">
+                    <label for="password" class="text-gray-700 font-bold">Password</label>
+                    <input class="leading-none block mt-3 rounded-lg shadow-sm focus:shadow-outline px-3 py-2 text-lg font-medium border-gray-400 border" type="password" id="password" name="password" autocomplete="on" placeholder="**************">
+                </div>
+                <!-- tip: Smart implementation to place two elements against each other on the opposit eends -->
+                <div class="flex justify-between mt-10">
+                    <button class="font-bold text-gray-100 text-lg rounded-md px-4 py-2 bg-blue-500 hover:bg-blue-700">
+                        Sign In
+                    </button>
+                    <button class="font-bold text-blue-500 hover:text-blue-700">
+                        Forgot Password?
+                    </button>
+                </div>
+            </form>
+            <p class="text-center text-gray-500 text-xs">
+                &copy;2020 Acme Corp. All rights reserved.
+            </p>
         </div>
     </div>
 
+
+    
     
 
 
 
-
 </body>
+
 </html>
